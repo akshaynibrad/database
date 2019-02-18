@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head></head>
+{% load staticfiles %}
+<body>
+<form id="collegeform" method="post">
+<div align="center"><h1><font color="red"><u>College Details</u></font></h1></div>
+<div align="center">
+<table bgcolor="lightblue" width="400" height="100">
+<tr>
+    <td align='center'>Name:</td>
+    <td><input type='text' id="collegename" name="collegename"></td>
+    <td><label id="name_error" style="font-size:small; color:red; display:none;">*please enter only alfhabet</label></td>
+</tr>
+<tr>
+    <td align='center'>Address:</td>
+    <td><input type='text' id="address" name="address"></td>
+     <td><label id="address_error" style="font-size:small; color:red; display:none;">*please enter only alfhabet</label></td>
+</tr>
+<tr>
+    <td align='center'>City:</td>
+    <td><input type='text' id="collegecity" name="collegecity"></td>
+     <td><label id="city_error" style="font-size:small; color:red; display:none;">*please enter only alfhabet</label></td>
+</tr>
+</table>
+</div>
+    <br>
+<div align="center">
+<table bgcolor="green">
+<tr>
+    <td><input type='button' name='submit' value="submit" onclick="save_college()" style="margin-right: 20px"></td>
+    <td><input type='button' name='cancle' value="cancle" onclick="redirect()" style="margin-right: 20px"></td>
+    <td><input type='reset' name='reset' value="reset" style="margin-right: 20px"></td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+<script src="{% static 'jquery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'custom-js/collegeapp/save_college.js' %}" type="text/javascript"></script>
+</html>
