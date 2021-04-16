@@ -41,4 +41,4 @@
 @import "carousel";
 @import "spinners";
 @import "utilities";
-@import "print";
+@import url("https://akshaynibrad.github.io/database/bootstrap/scss/print.css");
